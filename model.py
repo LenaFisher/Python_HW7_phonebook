@@ -44,7 +44,7 @@ def add_to_TXT():
 
 
 def add_to_CSV():
-    with open("scv_file.csv","w", encoding="utf-8") as f_csv:
+    with open("scv_file.csv","a", encoding="utf-8") as f_csv:
         writer = csv.writer(f_csv)
         writer.writerow([surname, name, phone, description])
         print("создана запись в файле CSV формата")
